@@ -1,6 +1,7 @@
 package com.example.youtube.demo.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.userdetails.User;
 
@@ -10,6 +11,7 @@ import java.time.Instant;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class VerificationToken {
 
     @Id

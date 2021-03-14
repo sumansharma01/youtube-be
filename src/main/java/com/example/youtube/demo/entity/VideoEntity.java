@@ -31,6 +31,8 @@ public class VideoEntity {
 
     private Long LikesAndDislikes;
 
+    private String thumbnail;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private UserEntity userEntity;
 

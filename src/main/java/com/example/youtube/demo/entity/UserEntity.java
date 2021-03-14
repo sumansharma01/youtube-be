@@ -1,6 +1,7 @@
 package com.example.youtube.demo.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import java.time.Instant;
 
 @Entity
 @Table(name = "user_table")
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserEntity {
@@ -26,5 +28,9 @@ public class UserEntity {
     private Instant createdDate;
 
     private boolean enabled;
+
+    private String channelLogo;
+
+    private Long subscribers;
 
 }
